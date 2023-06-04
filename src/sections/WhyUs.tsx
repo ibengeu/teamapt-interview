@@ -37,7 +37,6 @@ export default function WhyUs() {
           trigger: ".why-trigger",
           start: 'top 120%', // Start the animation when the element is 80% in the viewport
           toggleActions:"restart none none reset",
-          markers:true
         },
       }
     );
