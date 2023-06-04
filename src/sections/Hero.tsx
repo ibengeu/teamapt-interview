@@ -1,14 +1,23 @@
-import { useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import HotAirBalloon from '../assets/images/hot_ballon.jpg';
 import { Asterisk, MoveDown } from 'lucide-react';
+import gsap from "gsap"
+
 export function Hero() {
   const maskRef = useRef(null);
   const imageRef = useRef(null);
+  const h1ref = useRef(null)
+
+  useLayoutEffect(() => {
+
+    
+    
+  }, [])
 
 
   return (
     <div className="text-white flex gap-24 mb-40 justify-between">
-      <h1 className="text-[200px] leading-[100%] font-heading  mb-10">
+      <h1 className="text-[200px] leading-[100%] font-heading  mb-10" ref={h1ref}>
         <span>Darcy's</span> <span>insurance</span> <span>products</span>
       </h1>
       <div className="flex gap-y-28 w-2/3  ">
