@@ -17,3 +17,10 @@
       transform-origin: top;
     }
   } 
+
+
+  @font-face {
+    font-family: 'Gratelos Display';
+    src: local('Gratelos Display'),
+         url('./assets/Fonts/gratelosdisplay.ttf') format('ttf');
+}

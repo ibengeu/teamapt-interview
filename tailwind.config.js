@@ -7,7 +7,7 @@ export default {
   theme: {
     fontFamily:{
       'sans':['Poppins', 'system-ui'],
-      'heading':['Barlow Condensed', 'system-ui']
+      'heading':['Gratelos Display', 'system-ui']
     },
     extend: {
       colors:{
