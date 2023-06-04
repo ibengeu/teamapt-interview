@@ -72,10 +72,10 @@ export function Products() {
       ></div>
 
       <div
-        className="h-auto bg-insure-blue w-1/3 p-6 rounded-3xl  flex flex-col justify-end "
+        className="h-auto bg-insure-blue w-1/3 p-6 rounded-[60px]  flex flex-col justify-end "
         ref={bestChoice}
       >
-        <h1 className="text-4xl mb-6 font-heading">Best Choice</h1>
+        <h1 className="text-5xl mb-6 font-heading">Best Choice</h1>
         <p ref={paraRef}>
           Not all insurance are the same. That's why agency knows that your
           insurance should be customized to fit your situation

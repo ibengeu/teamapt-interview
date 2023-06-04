@@ -55,7 +55,7 @@ export default function Contact() {
 
         <div className="flex flex-col gap-10 w-[500px] mb-40">
           <div>
-            <h4 className="font-heading text-2xl mb-6">Insurance Services</h4>
+            <h4 className="font-sans font-medium text-xl mb-6">Insurance Services</h4>
             <ul className="flex gap-6 gap-y-20">
               <li className="text-slate-300 opacity-50">Medical Expenses</li>
               <li className="text-slate-300 opacity-50">
@@ -67,7 +67,7 @@ export default function Contact() {
             </ul>
           </div>
           <div>
-            <h4 className="font-heading text-2xl mb-6">Company</h4>
+            <h4 className="font-sans font-medium text-xl mb-6">Company</h4>
             <ul className="flex gap-6">
               <li className="text-slate-300 opacity-50">About us</li>
               <li className="text-slate-300 opacity-50">career</li>
@@ -76,7 +76,7 @@ export default function Contact() {
             </ul>
           </div>
           <div>
-            <h4 className="font-heading text-2xl mb-6">bonus</h4>
+            <h4 className="font-sans font-medium text-xl mb-6">bonus</h4>
             <ul className="flex gap-6">
               <li className="text-slate-300 opacity-50">Gift Certificate</li>
               <li className="text-slate-300 opacity-50">Afiliate Program</li>
