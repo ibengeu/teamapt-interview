@@ -14,7 +14,7 @@ export function Nav() {
         <li className="font-regular">Blog</li>
         <li className="font-regular">Career</li>
       </ul>
-      <div className="flex gap-6">
+      <div className="flex gap-8">
         <button
           type="button"
           className="bg-insure-light-blue rounded-full p-4 font-medium px-10 text-insure-blue"
