@@ -44,7 +44,7 @@ export function Hero() {
             ref={imageRef}
             src={HotAirBalloon}
             alt=""
-            className="h-[600px] w-[240px] object-cover rounded-full shadow-bg-light-blue drop-shadow-insure-shadow transform-origin-top"
+            className="h-[600px] w-[200px] object-cover rounded-full shadow-bg-light-blue drop-shadow-insure-shadow transform-origin-top"
           />
         </div>
       </div>
