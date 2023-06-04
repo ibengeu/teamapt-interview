@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <div className="text-white flex gap-24 mb-40 justify-between">
       <h1 className="text-[200px] leading-[100%] font-heading  mb-10">
-        <span>Darcy's</span> <span>Insurance</span> <span>Products</span>
+        <span>Darcy's</span> <span>insurance</span> <span>products</span>
       </h1>
       <div className="flex gap-y-28 w-2/3  ">
         <div className="flex flex-col gap-10 ">
