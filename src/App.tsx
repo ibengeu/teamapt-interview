@@ -7,7 +7,7 @@ import WhyUs from './sections/WhyUs';
 
 function App() {
   return (
-    <div className="font-sans bg-insure-blue bg-gradient-to-b from-insure-blue via-black via-5% to-insure-blue  min-h-screen px-20 text-white max-w-[1440px] mx-auto">
+    <div className="font-sans insure-gradient  min-h-screen px-20 text-white max-w-[1440px] mx-auto">
       <Nav />
         <Hero />
 
