@@ -7,7 +7,8 @@ import WhyUs from './sections/WhyUs';
 
 function App() {
   return (
-    <div className="font-sans insure-gradient  min-h-screen px-20 text-white max-w-[1440px] mx-auto">
+    <div className='p-10 bg-insure-black max-w-[1440px]  mx-auto'>
+      <div className="font-sans insure-gradient  min-h-screen px-20 text-white  rounded-3xl">
       <Nav />
         <Hero />
 
@@ -15,6 +16,7 @@ function App() {
         <Testimonial/>
         <WhyUs/>
         <Contact/>
+    </div>
     </div>
   );
 }

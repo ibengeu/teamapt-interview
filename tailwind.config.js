@@ -11,7 +11,7 @@ export default {
     },
     extend: {
       colors:{
-        "insure-black":"#0b0fi7",
+        "insure-black":"#0C0F17",
         "insure-blue":"#1f283d",
         "insure-light-blue":"#84d7e9",
         "insure-pink":"#FF6477",

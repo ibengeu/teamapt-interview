@@ -63,7 +63,7 @@ export function Products() {
         </p>
       </div>
       <div
-        className={`h-96 w-[200px] rounded-full hover:drop-shadow-insure-shadow hover:scale-105 transition-all hover:cursor-pointer`}
+        className={`h-96 w-[140px] rounded-full hover:drop-shadow-insure-shadow hover:scale-105 transition-all hover:cursor-pointer`}
         style={{
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
