@@ -8,7 +8,7 @@ export function Nav() {
       <ul className="flex gap-6">
         <li className="font-regular">Home</li>
         <li className="font-regula flex items-center">
-          <span>Services</span> <ChevronDown size={20} />{' '}
+          <span>Services</span> <ChevronDown size={20} className='ml-4' />
         </li>
         <li className="font-regular">About Us</li>
         <li className="font-regular">Blog</li>
@@ -17,7 +17,7 @@ export function Nav() {
       <div className="flex gap-6">
         <button
           type="button"
-          className="bg-insure-light-blue rounded-full p-4 font-bold px-10 text-insure-blue"
+          className="bg-insure-light-blue rounded-full p-4 font-medium px-10 text-insure-blue"
         >
           Contact Us
         </button>

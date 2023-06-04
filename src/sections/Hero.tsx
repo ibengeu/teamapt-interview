@@ -7,14 +7,14 @@ export function Hero() {
 
 
   return (
-    <div className="text-white flex gap-28 mb-40 justify-between w-full">
-      <h1 className="text-[200px] leading-[100%] font-heading w-1/2 mb-10">
+    <div className="text-white flex gap-24 mb-40 justify-between">
+      <h1 className="text-[200px] leading-[100%] font-heading  mb-10">
         <span>Darcy's</span> <span>Insurance</span> <span>Products</span>
       </h1>
-      <div className="flex gap-28 ">
-        <div className="flex flex-col gap-10 w-1/2 ">
+      <div className="flex gap-y-28 w-2/3  ">
+        <div className="flex flex-col gap-10 ">
           <div>
-            <span className="bg-white text-black inline-block p-1 rounded-full text-3xl mb-4">
+            <span className="bg-white text-black inline-block p-1 rounded-full text-2xl mb-4">
               <Asterisk size={32} />
             </span>{' '}
             <p className="">
@@ -22,16 +22,16 @@ export function Hero() {
               <a href="" className="text-insure-light-blue">
                 Plans
               </a>{' '}
-              are saving policyholders 30% - 60% on premiums
+              are saving<br/> policyholders 30% - 60% <br/> on premiums
             </p>
           </div>
 
           <div>
-            <span className="bg-white text-black inline-block p-1 rounded-full text-3xl mb-4 ">
+            <span className="bg-white text-black inline-block p-1 rounded-full text-2xl mb-4 ">
               <Asterisk size={32} />
             </span>
             <p className="">
-              We offer a choice of low dedactibles and include no cost
+              We offer a choice of low <br/> dedactibles and include <br/> no cost
               value-added services
             </p>
           </div>
@@ -39,15 +39,16 @@ export function Hero() {
             <MoveDown size={56} />
           </div>
         </div>
-        <div className="mask" ref={maskRef}>
+       
+      </div>
+      <div className="mask" ref={maskRef}>
           <img
             ref={imageRef}
             src={HotAirBalloon}
             alt=""
-            className="h-[600px] w-[200px] object-cover rounded-full shadow-bg-light-blue drop-shadow-insure-shadow transform-origin-top"
+            className="h-[600px] object-cover rounded-full shadow-bg-light-blue drop-shadow-insure-shadow transform-origin-top"
           />
         </div>
-      </div>
     </div>
   );
 }

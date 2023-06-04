@@ -51,7 +51,7 @@ export function Products() {
   return (
     <div className="text-white flex gap-6 gap-y-8 flex-wrap mb-40 skewElem">
       <div
-        className={`h-96 group  rounded-[60px]  w-[600px] relative hover:drop-shadow-insure-shadow hover:scale-105 transition-all hover:cursor-pointer`}
+        className={`h-96 group  rounded-[60px]  w-[560px] relative hover:drop-shadow-insure-shadow hover:scale-105 transition-all hover:cursor-pointer`}
         style={{
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
@@ -63,7 +63,7 @@ export function Products() {
         </p>
       </div>
       <div
-        className={`h-96 w-[140px] rounded-full hover:drop-shadow-insure-shadow hover:scale-105 transition-all hover:cursor-pointer`}
+        className={`h-96 w-[180px] rounded-full hover:drop-shadow-insure-shadow hover:scale-105 transition-all hover:cursor-pointer`}
         style={{
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
@@ -72,7 +72,7 @@ export function Products() {
       ></div>
 
       <div
-        className="h-auto bg-insure-blue w-1/3 p-6 rounded-[60px]  flex flex-col justify-end "
+        className="h-auto bg-insure-blue w-1/3 p-8 rounded-[60px]  flex flex-col justify-end "
         ref={bestChoice}
       >
         <h1 className="text-5xl mb-6 font-heading">Best Choice</h1>
