@@ -1,23 +1,74 @@
 import { useLayoutEffect, useRef } from 'react';
 import HotAirBalloon from '../assets/images/hot_ballon.jpg';
 import { Asterisk, MoveDown } from 'lucide-react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from 'gsap';
 
 export function Hero() {
   const maskRef = useRef(null);
   const imageRef = useRef(null);
-  const h1ref = useRef(null)
+  const h1ref = useRef<HTMLDivElement[]>([]);
+  const containerRef = useRef(null);
 
   useLayoutEffect(() => {
+    // gsap.registerPlugin(ScrollTrigger);
 
-    
-    
-  }, [])
+    // gsap.to(maskRef.current, {
+    //   yPercent: 0,
+    //   duration: 1.5,
+    //   repeat: -1,
+    //   autoAlpha: 1,
+    // });
 
+    const elements = gsap.utils.toArray('.text-stagger');
+
+    gsap.fromTo(elements, {
+      opacity:0,
+      xPercent: -20,
+      ease: 'power4.out',
+    },{
+      opacity:1,
+      xPercent: 0,
+      duration: 1,
+      stagger:0.2,
+    autoAlpha:1
+      // delay: index * 0.2,
+      // repeat:-1
+
+    });
+
+   
+
+    // gsap.from(imageRef.current, {
+    //   yPercent: 100,
+    //   duration:1.5,
+    //   repeat:-1,
+
+    //   scrollTrigger: {
+    //     trigger: containerRef.current,
+    //     toggleActions:"restart none none reset"
+
+    //   },
+    // });
+
+    // gsap.set(imageRef.current, { position: "fixed",  });
+  }, []);
 
   return (
-    <div className="text-white flex gap-24 mb-40 justify-between">
-      <h1 className="text-[200px] leading-[100%] font-heading  mb-10" ref={h1ref}>
-        <span>Darcy's</span> <span>insurance</span> <span>products</span>
+    <div
+      className="text-white flex gap-24 mb-40 justify-between"
+      ref={containerRef}
+    >
+      <h1 className="text-[200px] leading-[100%] font-heading   mb-10">
+        <div className="text-stagger" ref={(el) => h1ref.current[0] = el}>
+          Darcy's
+        </div>{' '}
+        <div className="text-stagger" ref={(el) => h1ref.current[1] = el}>
+          insurance
+        </div>{' '}
+        <div className="text-stagger" ref={(el) => h1ref.current[2] = el}>
+          products
+        </div>
       </h1>
       <div className="flex gap-y-28 w-2/3  ">
         <div className="flex flex-col gap-10 ">
@@ -30,7 +81,8 @@ export function Hero() {
               <a href="" className="text-insure-light-blue">
                 Plans
               </a>{' '}
-              are saving<br/> policyholders 30% - 60% <br/> on premiums
+              are saving
+              <br /> policyholders 30% - 60% <br /> on premiums
             </p>
           </div>
 
@@ -39,24 +91,23 @@ export function Hero() {
               <Asterisk size={32} />
             </span>
             <p className="">
-              We offer a choice of low <br/> dedactibles and include <br/> no cost
-              value-added services
+              We offer a choice of low <br /> dedactibles and include <br /> no
+              cost value-added services
             </p>
           </div>
           <div className="bg-bg-light-blue rounded-full py-16 w-24 flex item-center justify-center bg-gradient-to-b from-transparent  to-insure-blue bg-opacity-5 ">
             <MoveDown size={56} />
           </div>
         </div>
-       
       </div>
       <div className="mask" ref={maskRef}>
-          <img
-            ref={imageRef}
-            src={HotAirBalloon}
-            alt=""
-            className="h-[600px] object-cover rounded-full shadow-bg-light-blue drop-shadow-insure-shadow transform-origin-top"
-          />
-        </div>
+        <img
+          ref={imageRef}
+          src={HotAirBalloon}
+          alt=""
+          className="h-[600px] object-cover rounded-full shadow-bg-light-blue drop-shadow-insure-shadow transform-origin-top"
+        />
+      </div>
     </div>
   );
 }
