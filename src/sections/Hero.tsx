@@ -1,13 +1,12 @@
 import { useLayoutEffect, useRef } from 'react';
 import HotAirBalloon from '../assets/images/hot_ballon.jpg';
 import { Asterisk, MoveDown } from 'lucide-react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
 
 export function Hero() {
   const maskRef = useRef(null);
   const imageRef = useRef(null);
-  const h1ref = useRef<HTMLDivElement[]>([]);
+  const h1ref = useRef<HTMLDivElement[] | null>([]);
   const containerRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -22,22 +21,21 @@ export function Hero() {
 
     const elements = gsap.utils.toArray('.text-stagger');
 
-    gsap.fromTo(elements, {
-      opacity:0,
-      xPercent: -20,
-      ease: 'power4.out',
-    },{
-      opacity:1,
-      xPercent: 0,
-      duration: 1,
-      stagger:0.2,
-    autoAlpha:1
-      // delay: index * 0.2,
-      // repeat:-1
-
-    });
-
-   
+    gsap.fromTo(
+      elements,
+      {
+        opacity: 0,
+        xPercent: -20,
+        ease: 'power4.out',
+      },
+      {
+        opacity: 1,
+        xPercent: 0,
+        duration: 1,
+        stagger: 0.2,
+        autoAlpha: 1,
+      }
+    );
 
     // gsap.from(imageRef.current, {
     //   yPercent: 100,
@@ -60,13 +58,33 @@ export function Hero() {
       ref={containerRef}
     >
       <h1 className="text-[200px] leading-[100%] font-heading   mb-10">
-        <div className="text-stagger" ref={(el) => h1ref.current[0] = el}>
+        <div
+          className="text-stagger"
+          ref={(el) =>
+            // @ts-ignore
+            (h1ref!.current[0] = el)
+          }
+        >
           Darcy's
         </div>{' '}
-        <div className="text-stagger" ref={(el) => h1ref.current[1] = el}>
+        <div
+          className="text-stagger"
+          ref={(el) =>
+            // @ts-ignore
+
+            (h1ref!.current[1] = el)
+          }
+        >
           insurance
         </div>{' '}
-        <div className="text-stagger" ref={(el) => h1ref.current[2] = el}>
+        <div
+          className="text-stagger"
+          ref={(el) =>
+            // @ts-ignore
+
+            (h1ref!.current[2] = el)
+          }
+        >
           products
         </div>
       </h1>
