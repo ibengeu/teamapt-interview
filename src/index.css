@@ -19,7 +19,7 @@
 
   .insure-gradient {
     background: rgb(31,40,61);
-    background: linear-gradient(180deg, rgba(31,40,61,1) 0%, rgba(12,15,24,1) 10%, rgba(12,15,24,1) 93%, rgba(31,40,61,1) 100%);    
+    background: linear-gradient(180deg, rgba(31,40,61,1) 0%, rgba(12,15,24,1) 7%, rgba(12,15,24,1) 94%, rgba(31,40,61,1) 100%);      
   }
 }
 
