@@ -1,7 +1,6 @@
 import { useLayoutEffect, useRef } from 'react';
 import HotAirBalloon from '../assets/images/hot_ballon.jpg';
 import { Asterisk, MoveDown } from 'lucide-react';
-import gsap from "gsap"
 
 export function Hero() {
   const maskRef = useRef(null);
