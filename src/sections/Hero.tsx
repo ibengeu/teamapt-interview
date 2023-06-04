@@ -26,6 +26,8 @@ export function Hero() {
       {
         opacity: 0,
         xPercent: -20,
+        stagger: 0.2,
+
         ease: 'power4.out',
       },
       {
@@ -34,22 +36,29 @@ export function Hero() {
         duration: 1,
         stagger: 0.2,
         autoAlpha: 1,
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: 'top 80%', // Start the animation when the element is 80% in the viewport
+          toggleActions: 'restart none none reset',
+        },
       }
     );
+    gsap.fromTo(
+      '.asterisk',
+      {
+        rotate: 0,
+        repeat: -1,
+        duration: 1,
+      },
+      {
+        rotate: 360,
+        repeat: -1,
+        duration: 3,
+        ease:"linear"
 
-    // gsap.from(imageRef.current, {
-    //   yPercent: 100,
-    //   duration:1.5,
-    //   repeat:-1,
-
-    //   scrollTrigger: {
-    //     trigger: containerRef.current,
-    //     toggleActions:"restart none none reset"
-
-    //   },
-    // });
-
-    // gsap.set(imageRef.current, { position: "fixed",  });
+        
+      }
+    );
   }, []);
 
   return (
@@ -91,7 +100,7 @@ export function Hero() {
       <div className="flex gap-y-28 w-2/3  ">
         <div className="flex flex-col gap-10 ">
           <div>
-            <span className="bg-white text-black inline-block p-1 rounded-full text-2xl mb-4">
+            <span className="bg-white text-black inline-block p-1 rounded-full text-2xl mb-4 asterisk">
               <Asterisk size={32} />
             </span>{' '}
             <p className="">
@@ -105,8 +114,8 @@ export function Hero() {
           </div>
 
           <div>
-            <span className="bg-white text-black inline-block p-1 rounded-full text-2xl mb-4 ">
-              <Asterisk size={32} />
+            <span className="bg-white text-black inline-block p-1 rounded-full text-2xl mb-4 asterisk">
+              <Asterisk size={32} className="" />
             </span>
             <p className="">
               We offer a choice of low <br /> dedactibles and include <br /> no

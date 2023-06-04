@@ -4,7 +4,7 @@ import buoyIcon from '../assets/icons/buoy.svg';
 export function Nav() {
   return (
     <nav className="font-sans text-white flex p-10 justify-between items-center mb-10">
-      <img src={buoyIcon} alt="" className="h-10 " />
+      <img src={buoyIcon} alt="" className="h-10 animate-spin duration-700" />
       <ul className="flex gap-6">
         <li className="font-regular">Home</li>
         <li className="font-regula flex items-center">

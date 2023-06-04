@@ -68,8 +68,8 @@ export default function Testimonial() {
           </button>
         </div>
       </div>
-      <div className="flex p-24">
-        <span className="bg-white text-black inline-block p-1 rounded-full text-3xl mr-4 h-fit mt-3">
+      <div className="flex p-24"> 
+        <span className="bg-white text-black inline-block p-1 rounded-full text-3xl mr-4 h-fit mt-3 asterisk">
         <Asterisk size={32} />
         </span>
         <h2 className="text-7xl font-heading">Our Experts Say</h2>
