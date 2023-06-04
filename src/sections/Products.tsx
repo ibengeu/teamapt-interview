@@ -97,7 +97,7 @@ export function Products() {
         </p>
       </div>
       <div
-        className={`h-64 rounded-3xl w-[32%] relative hover:drop-shadow-insure-shadow hover:scale-105 transition-all hover:cursor-pointer`}
+        className={`h-64 rounded-[60px] w-[32%] relative hover:drop-shadow-insure-shadow hover:scale-105 transition-all hover:cursor-pointer`}
         style={{
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
